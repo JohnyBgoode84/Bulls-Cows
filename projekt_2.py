@@ -26,7 +26,7 @@ def intro() -> None:
     print("I've generated a random 4 digit number for you")
     print("Let's play a bulls and cows game.")
     print(separator)
-    #print("tajné číslo je", random_numbers)
+    #print(f"(CHEATING --- secret number is: {random_numbers} --- CHEATING)")
     print("Enter a number (non-repeating numbers):")
     print(separator)
 
@@ -55,7 +55,7 @@ def matches(tip: str, random_num: list):
         elif number in random_num:
             cows += 1
 
-    #stav, množné
+    #stav, množné.č.
     if bulls != 4:
         state = f"{bulls} bull"
         if bulls > 1:
@@ -64,7 +64,7 @@ def matches(tip: str, random_num: list):
         if cows > 1:
             state += "s"
         return state
-      
+  
 def main():
     count_tips = 0
     intro()
@@ -83,13 +83,13 @@ def main():
                 print(message)
                 print(separator)
  
-
     if count_tips <= 10:
         print("That's amazing")
-    elif count_tips < 25:
+    elif count_tips < 20:
         print("That's average")
     else:
         print("That's not so good")
+
 
 #VYSLEDEK
 def result(count_tip_num: int):
