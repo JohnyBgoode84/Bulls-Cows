@@ -1,4 +1,4 @@
-# Bulls-Cows
-Program, který simuluje hru Bulls and Cows.
+Bulls-Cows - Druhý projekt do Engeto Online Python Akademie
 
-Druhý projekt do Engeto Online Python Akademie
+#POPIS
+Program, který simuluje hru Bulls and Cows.
